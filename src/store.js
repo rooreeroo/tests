@@ -95,7 +95,6 @@ class Store {
     } else {
       cart[index].counter += 1;
     }
-    console.log('cart',cart)
     this.setState({
       items: this.state.items,
       card: [...cart]
