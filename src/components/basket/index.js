@@ -4,7 +4,6 @@ import './styles.css';
 import Card from "../card";
 
 const Basket = ({active, setActive, card, sum, counter}) => {
-    console.log('items',card);
     return (
         <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
             <div className={active ? "modal__content active" : "modal__content"} onClick={e => e.stopPropagation()}>
