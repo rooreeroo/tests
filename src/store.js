@@ -102,7 +102,10 @@ class Store {
     })
   }
   fullPrice() {
-    return this.state.card.reduce((price, item) => price + item.price, 0)
+    return this.state.card.reduce((price, item) => (price + item.price) * item.counter, 0)
+  }
+  fullCounter() {
+    return this.state.card.reduce((counter, item) => counter + item.counter, 0)
   }
 
 }

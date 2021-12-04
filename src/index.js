@@ -18,8 +18,7 @@ const store = new Store({
     {code: 6, title: 'Карандаши цветные', price: 111},
     {code: 7, title: 'Товар сюрприз', price: 0}
   ],
-  card: [],
-  basket: {price: 0, counter: 0}
+  card: []
 
 });
 
