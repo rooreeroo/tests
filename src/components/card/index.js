@@ -1,8 +1,8 @@
 import React from "react";
 import './styles.css';
 
-const Card = ({code, title, price, counter, basket}) => {
-    console.log('item',code, title, price)
+const Card = ({code, title, price, counter}) => {
+
     if (counter !== 0) {
         return (
             <div className="card-info">
