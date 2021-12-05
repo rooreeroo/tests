@@ -2,7 +2,6 @@ import React, {useCallback, useState} from 'react';
 import Controls from "./components/controls";
 import List from "./components/list";
 import Layout from "./components/layout";
-import './style.css'
 
 /**
  * Приложение
