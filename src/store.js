@@ -88,16 +88,17 @@ class Store {
 
   onAddItem(code) {
     const target = this.state.items.find(item => item.code === code);
-    const cart = [...this.state.card];
-    const index = cart.findIndex(item => item.code === code);
+    const copyCard =  [];
+    this.state.card.forEach((item) => copyCard.push({...item}));
+    const index = copyCard.findIndex(item => item.code === code);
     if (index === -1) {
-      cart.push({...target, counter: 1})
+      copyCard.push({...target, counter: 1})
     } else {
-      cart[index].counter += 1;
+      copyCard[index].counter += 1;
     }
     this.setState({
       items: this.state.items,
-      card: [...cart]
+      card: [...copyCard]
     })
   }
   fullPrice() {
